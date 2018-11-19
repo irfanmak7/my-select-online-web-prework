@@ -1,9 +1,14 @@
 def my_select(collection)
  # your code here!
  i = 0
+ new_array = []
  while i < collection.length
-   yield(collection.even?)
+   if yield(collection[i]) == true
+     new_array << array[i]
+   else
+     #nothing
+   end
    i += 1
  end
- collection
+ new_array
 end
